@@ -22,8 +22,7 @@ export class BuscadorComponent implements OnInit {
   ngOnInit() {
   }
 
-  verHeroe(nombre:string) {
-    let idx = this._serviceHeroe.getHeroeIndex(nombre);
+  verHeroe(idx:number) {
     this.router.navigate(['/heroe', idx]);
   }
 
